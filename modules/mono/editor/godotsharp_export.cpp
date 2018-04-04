@@ -90,7 +90,7 @@ void GodotSharpExport::_export_begin(const Set<String> &p_features, bool p_debug
 	ERR_FAIL_COND(!mono_domain_set(export_domain, false));
 
 	Map<String, String> dependencies;
-	dependencies.insert("mscorlib", GDMono::get_singleton()->get_corlib_assembly()->get_path());
+	//dependencies.insert("mscorlib", GDMono::get_singleton()->get_corlib_assembly()->get_path());
 
 	GDMonoAssembly *scripts_assembly = GDMonoAssembly::load_from(project_dll_name, project_dll_src_path, /* refonly: */ true);
 
