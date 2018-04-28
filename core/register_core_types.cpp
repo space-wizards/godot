@@ -40,6 +40,7 @@
 #include "geometry.h"
 #include "input_map.h"
 #include "io/config_file.h"
+#include "io/file_access_script.h"
 #include "io/http_client.h"
 #include "io/marshalls.h"
 #include "io/multiplayer_api.h"
@@ -175,6 +176,9 @@ void register_core_types() {
 	ClassDB::register_class<EncodedObjectAsID>();
 
 	ClassDB::register_class<JSONParseResult>();
+
+	ClassDB::register_class<FileAccessScript>();
+	ClassDB::register_class<PackSourceScript>();
 
 	ip = IP::create();
 
